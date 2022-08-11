@@ -6,8 +6,6 @@ Follow the instructions in the file and create this page:
 
 ![](screenshot.png)
 
-(You may need to google a bit to find some styles)
-
 Hint, here is the properties used in this exercise:
 
     background-color: #ddd;
