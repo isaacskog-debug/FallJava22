@@ -1,0 +1,30 @@
+<!-- A selector that demands both element and class to be correct -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* p tag AND center */
+    p.center {
+      text-align: center;
+      color: red;
+    }
+
+    h1.center {
+      color:blue
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="center">This heading will not be affected</h1>
+  <p>This paragraph will not be affected</h1>
+  <p class="center">This paragraph will be red and center-aligned.</p>
+  <p class="center">This paragraph will be red and center-aligned.</p>
+  <p class="center">This paragraph will be red and center-aligned.</p>
+
+</body>
+
+</html>

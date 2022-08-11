@@ -1,0 +1,50 @@
+<!-- Limit the selection, the element has to have a specific ancestor -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* "hightlight" with ancestors that are "intro" will be red */
+    .intro .highlight {
+      color: red;
+    }
+
+    .product .highlight {
+      color: blue;
+    }
+
+    .highlight {
+      color: green;
+    }
+
+    h1 {
+      font-size: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>aaa</h1>
+  <h1>aaa</h1>
+  <h1>aaa</h1>
+  <h1>aaa</h1>
+  <div class="intro">
+    <div>
+      <p class="highlight">My grandmother is intro</p>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p class="highlight">My mother is intro</p>
+  </div>
+
+  <p class="highlight">No mama</p>
+
+  <div class="product">
+    <div>Glass</div>
+    <div class="highlight">Pris: 12kr</div>
+  </div>
+</body>
+
+</html>
