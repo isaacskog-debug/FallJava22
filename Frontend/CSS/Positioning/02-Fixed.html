@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed positioning</title>
+    <style>
+        body {
+            background-color: lightslategray;
+        }
+
+        .iAmStuck {
+            position: fixed;
+            width: 400px;
+            height: 200px;
+            border: 5px solid purple;
+            background-color: pink;          
+
+            /*
+            Play with
+            top
+            right
+            bottom
+            left
+            */
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fixed positioning </h1>
+
+    <h3>1</h3>
+    <h3>2</h3>
+    <h3>3</h3>
+    <h3>4</h3>
+    <h3>5</h3>
+
+    <div class="iAmStuck">
+        I am positioned fixed (try scroll down)
+    </div>
+
+    <div style="height:3000px">
+    </div>
+</body>
+
+</html>

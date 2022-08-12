@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute positioning</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: lightslategray;
+            font-family: Arial;
+        }
+
+        div {
+            background-color: white;
+        }
+
+        .mother {
+            position: relative;
+            height: 200px;
+            border: 5px solid purple;
+            margin:50px;
+        }        
+
+        .child{
+            position: absolute;
+            border: 5px solid plum;
+            background-color: bisque;
+            width: 200px;
+            height: 100px;
+
+            right:5px;
+            top: -25px;
+
+            /*
+            play around with
+
+            right
+            top
+            left
+            bottom
+
+            */
+        }
+
+    </style>
+    <h1>Absolute positioning</h1>
+
+    <div class="mother">
+        <div class="child">
+            I am positioned absolute
+        </div>
+    </div>
+
+ 
+    
+</body>
+</html>

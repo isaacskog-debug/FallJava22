@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+</head>
+
+<body>
+    <!--
+        References
+
+        https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+    -->
+
+    <style>
+        div {
+            border: solid 1px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* 0 => 800 */
+        @media (max-width: 800px) {
+            .misc {
+                display: none;
+            }
+        }
+
+        /* 1000 => infinity */
+        @media (min-width: 1000px) {
+            body {
+                background-color: rgb(128, 167, 147);
+            }
+            div {
+                background-color:white
+            }
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            Important stuff
+        </div>
+
+        <div class="misc">
+            An area with not so important stuff
+        </div>
+
+    </body>
+
+</html>
