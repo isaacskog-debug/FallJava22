@@ -20,10 +20,6 @@ List the amount of invoices per year.
 
 Hint: google for "Year(...)"
 
-    select YEAR(InvoiceDate) Year, COUNT(*) NrOfInvoices
-    from Invoice
-    group by YEAR(InvoiceDate)
-
 ## 3.3 (Group by)
 
 List all artists and how many albums they have released
