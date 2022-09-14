@@ -37,13 +37,3 @@ Look for the following in the text:
 - Events
 
 Sometimes it helps to add rows in your database to see if it's setup right
-
-## Extra
-
-If you are finished with the task above: show your teacher.
-
-Then you can extend the diagram with more entities, e.g:
-
-- Retailers of scooters. Which scooters they sell. Contact info.
-- Staff/freelancers that collect the scooters (and get money for that)
-- Staff that repairs the scooters
