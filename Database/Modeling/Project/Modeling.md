@@ -55,7 +55,9 @@ Model the database from the ER-diagram.
 
 ## Presentation 
 
-Present your work in 5 minutes:
+Create a presentation (Powerpoint or Google Slide)
+
+Present your work in 10 minutes:
 - Why did you choose this company?
 - Explain the process
     * The development of the ER-diagram
