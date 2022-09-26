@@ -1,0 +1,12 @@
+/*
+Vissa element som "input" och "img" är default "inline-element"
+
+Andra som "p" och "div" är default "block-element"
+
+Men detta kan justeras i CSS-koden
+
+*/
+input {
+    display: block;
+    margin: 5px 0;
+}
