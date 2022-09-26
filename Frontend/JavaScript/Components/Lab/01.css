@@ -1,0 +1,10 @@
+.standout {
+    border: solid 5px #936d3b;
+    background-color: burlywood;
+    padding:10px;
+    font-size: 30px;
+}
+
+.hideMe {
+    display: none;
+}
