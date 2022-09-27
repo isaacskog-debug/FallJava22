@@ -12,28 +12,27 @@ function sendForm() {
     if (inputEmail.value === "") {
         resultArea.classList.add("sad")
         resultArea.innerText = "Empty email address"
-        return
+        return 
     }
 
-    if (!isValidEmailAddress(inputEmail.value)) {
+    if (isValidEmailAddress(inputEmail.value)) {
+
+        if (inputEmail.value === inputEmailAgain.value) {
+            resultArea.classList.add("happy")
+            resultArea.innerText = "The email addresses are the same :)"
+        } else {
+            resultArea.classList.add("sad")
+            resultArea.innerText = "Not the same"
+        }
+
+    } else {
         resultArea.classList.add("sad")
         resultArea.innerText = "Invalid email address"
-        return        
     }
-    
-    if (inputEmail.value !== inputEmailAgain.value) {
-        resultArea.classList.add("sad")
-        resultArea.innerText = "Not the same"
-        return
-    }
-
-    resultArea.classList.add("happy")
-    resultArea.innerText = "The email addresses are the same :)"
-
 
 }
 
-function isValidEmailAddress(email) {
+function isValidEmailAddress(email){
     return String(email)
         .toLowerCase()
         .match(
