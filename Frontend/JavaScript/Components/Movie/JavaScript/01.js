@@ -2,17 +2,17 @@ const result = document.querySelector(".result")
 
 let chosenStars = 0
 
-function hoverStar(number) {
-    lightAllStarsUpTo(number)
+function hoverStar(a) {
+    lightAllStarsUpTo(a)
 }
 
 function leftStar() {
     lightAllStarsUpTo(chosenStars)
 }
 
-function clickStar(number) {
-    result.innerText = `You rated ${number} stars!`
-    chosenStars = number
+function clickStar(b) {
+    result.innerText = `You rated ${b} stars!`
+    chosenStars = b
 }
 
 function resetStars() {
@@ -21,15 +21,15 @@ function resetStars() {
     lightAllStarsUpTo(chosenStars)
 }
 
-function lightAllStarsUpTo(number) {
-    
+function lightAllStarsUpTo(c) {
+
     const allStars = document.querySelectorAll(".movie .rating img")
-    
-    for (let i = 1; i <= number; i++) {
-        allStars[i - 1].src = "star.png"
+
+    for (let i = 1; i <= c; i++) {
+        allStars[i - 1].src = "stars/star.png"
     }
 
-    for (let i = number + 1; i <= 5; i++) {
-        allStars[i - 1].src = "star-gray.png"
+    for (let i = c + 1; i <= 5; i++) {
+        allStars[i - 1].src = "stars/star-gray.png"
     }
 }

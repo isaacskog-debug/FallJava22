@@ -46,3 +46,8 @@ function pow() {
     area.classList.add("standout")
 
 }
+
+function reloadPage() {
+    location.reload()
+}
+
