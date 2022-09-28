@@ -22,7 +22,15 @@ function update() {
     if (wayChoice === 'oneway') {
         from.disabled = false
         to.disabled = true
+
         okbutton.disabled = from.value===""
+
+        // Samma som:
+        // if (from.value === ""){
+        //     okbutton.disabled = true
+        // } else {
+        //     okbutton.disabled = false
+        // }
     }
 
     // User has chosen "roundtrip" 
