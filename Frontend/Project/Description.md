@@ -17,7 +17,7 @@ The component should contain a couple of form elements such as
 - color picker
 - range
 
-Focus more on **Javascript** than CSS.
+Focus mo re on **Javascript** than CSS.
 
 Pick one component from **Ideas.md** or choose your own.
 
