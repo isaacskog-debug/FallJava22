@@ -7,10 +7,6 @@ let wayChoice = null
 update()
 
 function update() {
-    // Show all
-    from.disabled = false
-    to.disabled = false
-    okbutton.disabled = false
 
     // Hide result text
     result.classList.add("hide")
@@ -24,13 +20,16 @@ function update() {
 
     // User has chosen "oneway"
     if (wayChoice === 'oneway') {
+        from.disabled = false
         to.disabled = true
         okbutton.disabled = from.value===""
     }
 
     // User has chosen "roundtrip" 
     if (wayChoice === 'roundtrip') {
-    
+
+        from.disabled = false
+        to.disabled = false
         okbutton.disabled = from.value==="" || to.value===""
 
         if (to.value !=="" &&  to.value < from.value) {
