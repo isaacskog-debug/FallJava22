@@ -6,6 +6,16 @@ Can't run npx
 
 Restart Visual Studio Code
 
+--
+
+## Problem
+
+Can't run node
+
+## Solution
+
+Install node at c:\ (not another disk)
+
 ---
 
 ## Problem
