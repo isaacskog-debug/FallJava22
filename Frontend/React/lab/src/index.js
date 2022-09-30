@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import Email from './email/Email05'
+import Email from './email/Email06'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
