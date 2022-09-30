@@ -1,7 +1,7 @@
-
 /*
-    If the user clicks ok => validate the form (write in the console)
+    If the user click ok => update the GUI
 */
+
 import { useState } from 'react'
 import './Email.css'
 
@@ -9,6 +9,10 @@ function Email() {
 
     const [input, setInput] = useState("")
     const [inputAgain, setInputAgain] = useState("")
+
+    const [message, setMessage] = useState("")
+    const [messageState, setMessageState] = useState("hidden")  // hidden, error, success
+
 
     const inputChange = (event) => {
         setInput(event.target.value)
@@ -20,21 +24,37 @@ function Email() {
     
     const sendForm = () => {
         if (input === ""){
-            console.log("Empty email address")
+            setMessage("Empty email address")
+            setMessageState("error")
             return
         }
 
         if (!isValidEmailAddress(input)) {
-            console.log("Invalid email address")
+            setMessage("Invalid email address")
+            setMessageState("error")            
             return
         }
 
         if (input !== inputAgain) {
-            console.log("Not the same")
+            setMessage("Not the same")
+            setMessageState("error")            
             return            
         }
 
-        console.log("Success!")
+        setMessageState("success") 
+        setMessage("The email addresses are the same :)")
+    }
+
+    const displayMessage = () => {
+
+        const classNames = messageState === "error" ? "result sad" : "result happy"
+
+        return (
+            <div className={classNames}>
+                {message}
+            </div>
+
+        )
     }
 
     return (
@@ -53,9 +73,7 @@ function Email() {
 
             <button onClick={sendForm}>Ok</button>
 
-            <div className="result hidden">
-                You entered ....
-            </div>
+            {displayMessage()}
 
         </article>
 
