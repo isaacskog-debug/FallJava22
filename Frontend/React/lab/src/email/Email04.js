@@ -1,3 +1,8 @@
+/*
+    Keep track of the value of both textfields
+
+    Write a text if the values are the same
+*/
 
 import { useState } from 'react'
 import './Email.css'
